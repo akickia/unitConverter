@@ -15,23 +15,25 @@
   <body>
       <header>
         <h1>Metric/Imperial Unit Conversion</h1>
-        <input type="number" value="20"/>
-        <button>Convert</button>
+        <input type="number" id="input-nr"/>
+        <div><button onclick="generateConversions()">Convert</button>
+        <p id="warningMsg"></p></div>
       </header>
       <main>
         <section>
           <h2>Length (Meter/Feet)</h2>
-          <p id="length-conv">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+          <p id="length-conv"></p>
         </section>
         <section>
           <h2>Volume (Liters/Gallons)</h2>
-          <p id="volume-conv">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+          <p id="volume-conv"></p>
         </section>
         <section>
           <h2>Mass (Kilograms/Pounds)</h2>
-          <p id="mass-conv">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+          <p id="mass-conv"></p>
         </section>
       </main>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
